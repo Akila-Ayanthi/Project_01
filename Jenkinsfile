@@ -1,12 +1,7 @@
 pipeline{
     agent any
     stages{
-        stage('checkout'){
-            steps{
-                git 'https://github.com/Akila-Ayanthi/Project_02'
-            }
-        }
-        stage('build'){
+	stage('build'){
             steps{
                 sh './build.sh'
             }
